@@ -235,9 +235,9 @@ http://ionicframework.com/docs/theming/ */
   }
 }
 
-ion-title.title-large {
+/* ion-title.title-large {
   font-size: 50px;
-}
+} */
 
 ion-toolbar {
   --background: var(--ion-color-secondary)

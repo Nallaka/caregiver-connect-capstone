@@ -9,10 +9,6 @@
         </ion-toolbar>
       </ion-header>
       <ion-content ref="content">
-        <ion-button @click="scrollToBottom">Scroll to Bottom
-
-        </ion-button>
-
         <ion-fab vertical="bottom" horizontal="end" slot="fixed">
         <ion-fab-button @click="() => router.push('/new')">
           <ion-icon :icon="add"></ion-icon>
@@ -30,7 +26,4 @@
     const router = useRouter();
 
     const content = ref();
-    const scrollToBottom = () => {
-        content.value.$e1.scrollToBottom(300);
-    };
   </script>

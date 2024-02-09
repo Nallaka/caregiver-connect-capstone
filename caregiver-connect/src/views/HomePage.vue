@@ -22,7 +22,7 @@
         <ion-icon slot="start" :icon="searchCircle"></ion-icon>
         Find Providers
       </ion-button>
-      <ion-button color="primary" size="large" expand="block" @click="() => router.push('/servies')">
+      <ion-button color="primary" size="large" expand="block" @click="() => router.push('/services')">
         <ion-icon slot="start" :icon="searchCircle"></ion-icon>
         Find Services
       </ion-button>
@@ -33,6 +33,7 @@
 <script setup lang="ts">
 import { 
   IonButton,
+  IonButtons,
   IonContent,
   IonHeader,
   IonPage,
