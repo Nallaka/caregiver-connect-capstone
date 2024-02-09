@@ -1,10 +1,11 @@
 import { createRouter, createWebHistory } from '@ionic/vue-router';
 import { RouteRecordRaw } from 'vue-router';
 import HomePage from '@/views/HomePage.vue';
-import Providers from '@/views/Providers.vue';
+import ProvidersSearch from '@/views/ProvidersSearch.vue';
 import Login from '@/views/Login.vue';
 import Signup from '@/views/Signup.vue';
-import Services from '@/views/Services.vue';
+import ServicesSearch from '@/views/ServicesSearch.vue';
+import AddProvider from '@/views/AddProvider.vue';
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -17,9 +18,9 @@ const routes: Array<RouteRecordRaw> = [
     component: HomePage
   },
   {
-    path: '/providers',
-    name: 'Providers',
-    component: Providers,
+    path: '/providers-search',
+    name: 'ProvidersSearch',
+    component: ProvidersSearch,
   },
   {
     path: '/login',
@@ -32,9 +33,14 @@ const routes: Array<RouteRecordRaw> = [
     component: Signup,
   },
   {
-    path: '/services',
-    name: 'Services',
-    component: Services,
+    path: '/services-search',
+    name: 'ServicesSearch',
+    component: ServicesSearch,
+  },
+  {
+    path: '/add-provider',
+    name: 'AddProvider',
+    component: AddProvider,
   }
 ]
 

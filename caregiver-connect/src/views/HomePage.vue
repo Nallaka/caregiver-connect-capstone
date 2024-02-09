@@ -18,11 +18,11 @@
           <ion-title size="large">CareGiver Connect</ion-title>
         </ion-toolbar>
       </ion-header>
-      <ion-button color="primary" size="large" expand="block" @click="() => router.push('/providers')">
+      <ion-button color="primary" size="large" expand="block" @click="() => router.push('/providers-search')">
         <ion-icon slot="start" :icon="searchCircle"></ion-icon>
         Find Providers
       </ion-button>
-      <ion-button color="primary" size="large" expand="block" @click="() => router.push('/services')">
+      <ion-button color="primary" size="large" expand="block" @click="() => router.push('/services-search')">
         <ion-icon slot="start" :icon="searchCircle"></ion-icon>
         Find Services
       </ion-button>
@@ -31,48 +31,48 @@
 </template>
 
 <script setup lang="ts">
-import { 
-  IonButton,
-  IonButtons,
-  IonContent,
-  IonHeader,
-  IonPage,
-  IonTitle,
-  IonToolbar,
-  IonIcon,
-} from '@ionic/vue';
-import { useRouter } from 'vue-router';
-import { searchCircle } from 'ionicons/icons';
-const router = useRouter();
+  import { 
+    IonButton,
+    IonButtons,
+    IonContent,
+    IonHeader,
+    IonPage,
+    IonTitle,
+    IonToolbar,
+    IonIcon,
+  } from '@ionic/vue';
+  import { useRouter } from 'vue-router';
+  import { searchCircle } from 'ionicons/icons';
+  const router = useRouter();
 
 </script>
 
 <style scoped>
-#container {
-  text-align: center;
-  
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
+  #container {
+    text-align: center;
+    
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
-}
+  #container strong {
+    font-size: 20px;
+    line-height: 26px;
+  }
 
-#container p {
-  font-size: 25px;
-  line-height: 32px;
-  
-  color: #8c8c8c;
-  
-  margin: 0;
-}
+  #container p {
+    font-size: 25px;
+    line-height: 32px;
+    
+    color: #8c8c8c;
+    
+    margin: 0;
+  }
 
-#container a {
-  text-decoration: none;
-}
+  #container a {
+    text-decoration: none;
+  }
 </style>

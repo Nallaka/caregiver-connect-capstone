@@ -243,6 +243,12 @@ ion-toolbar {
   --background: var(--ion-color-secondary)
 }
 
+.vcs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 html {
   /* For more information on dynamic font scaling, visit the documentation: 
   https://ionicframework.com/docs/layout/dynamic-font-scaling */
