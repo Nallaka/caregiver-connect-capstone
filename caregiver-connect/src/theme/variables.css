@@ -235,6 +235,14 @@ http://ionicframework.com/docs/theming/ */
   }
 }
 
+ion-title.title-large {
+  font-size: 50px;
+}
+
+ion-toolbar {
+  --background: var(--ion-color-secondary)
+}
+
 html {
   /* For more information on dynamic font scaling, visit the documentation: 
   https://ionicframework.com/docs/layout/dynamic-font-scaling */

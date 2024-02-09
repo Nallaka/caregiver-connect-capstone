@@ -1,13 +1,13 @@
 <template>
   <ion-page>
     <ion-header :translucent="true">
-      <ion-toolbar color="secondary">
-        <div class="ion-text-center">
+      <ion-toolbar>
+        <div class="ion-text-left">
           <ion-title size="large">CareGiver Connect</ion-title>
         </div>
         <ion-buttons :collapse="true" slot="end">
-          <ion-button color="primary" @click="() => router.push('/new')">Login</ion-button>
-          <ion-button color="primary" @click="() => router.push('/new')">Signup</ion-button>
+          <ion-button color="primary" fill="solid" @click="() => router.push('/login')">Login</ion-button>
+          <ion-button color="primary" fill="solid" @click="() => router.push('/signup')">Signup</ion-button>
         </ion-buttons>
       </ion-toolbar>
     </ion-header>
@@ -18,8 +18,13 @@
           <ion-title size="large">CareGiver Connect</ion-title>
         </ion-toolbar>
       </ion-header>
-      <ion-button color="primary" size="large" expand="block" @click="() => router.push('/new')">
+      <ion-button color="primary" size="large" expand="block" @click="() => router.push('/providers')">
+        <ion-icon slot="start" :icon="searchCircle"></ion-icon>
         Find Providers
+      </ion-button>
+      <ion-button color="primary" size="large" expand="block" @click="() => router.push('/servies')">
+        <ion-icon slot="start" :icon="searchCircle"></ion-icon>
+        Find Services
       </ion-button>
     </ion-content>
   </ion-page>
@@ -33,8 +38,10 @@ import {
   IonPage,
   IonTitle,
   IonToolbar,
+  IonIcon,
 } from '@ionic/vue';
 import { useRouter } from 'vue-router';
+import { searchCircle } from 'ionicons/icons';
 const router = useRouter();
 
 </script>
@@ -56,8 +63,8 @@ const router = useRouter();
 }
 
 #container p {
-  font-size: 16px;
-  line-height: 22px;
+  font-size: 25px;
+  line-height: 32px;
   
   color: #8c8c8c;
   
