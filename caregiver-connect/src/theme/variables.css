@@ -235,12 +235,21 @@ http://ionicframework.com/docs/theming/ */
   }
 }
 
-/* ion-title.title-large {
-  font-size: 50px;
-} */
+ion-title {
+  color: var(--ion-color-secondary);
+}
+
+ion-back-button {
+  color: var(--ion-color-secondary);
+}
 
 ion-toolbar {
   --background: var(--ion-color-primary)
+}
+
+.title-image {
+  margin-top: 8px;
+  height: 27px;
 }
 
 .vcs {

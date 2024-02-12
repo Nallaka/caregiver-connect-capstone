@@ -6,6 +6,8 @@ import Login from '@/views/Login.vue';
 import Signup from '@/views/Signup.vue';
 import ServicesSearch from '@/views/ServicesSearch.vue';
 import AddProvider from '@/views/AddProvider.vue';
+import EditProvider from '@/views/EditProvider.vue';
+
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -41,6 +43,11 @@ const routes: Array<RouteRecordRaw> = [
     path: '/add-provider',
     name: 'AddProvider',
     component: AddProvider,
+  },
+  {
+    path: '/edit-provider',
+    name: 'EditProvider',
+    component: EditProvider,
   }
 ]
 
