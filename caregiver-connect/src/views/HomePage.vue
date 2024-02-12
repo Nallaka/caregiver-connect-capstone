@@ -3,21 +3,37 @@
     <ion-header :translucent="true">
       <ion-toolbar>
         <div class="ion-text-left">
-          <ion-title size="large">CareGiver Connect</ion-title>
+          <ion-title size="large">
+            <img src="../../logo.jpg" width="50"/>
+            <ion-text color="secondary">CareGiver Connect</ion-text>
+          </ion-title>
         </div>
         <ion-buttons :collapse="true" slot="end">
-          <ion-button color="primary" fill="solid" @click="() => router.push('/login')">Login</ion-button>
-          <ion-button color="primary" fill="solid" @click="() => router.push('/signup')">Signup</ion-button>
+          <ion-button color="secondary" fill="solid" @click="() => router.push('/login')">Login</ion-button>
+          <ion-button color="secondary" fill="solid" @click="() => router.push('/signup')">Signup</ion-button>
         </ion-buttons>
       </ion-toolbar>
     </ion-header>
 
     <ion-content :fullscreen="true">
-      <ion-header collapse="condense">
+      <!-- <ion-header collapse="condense">
         <ion-toolbar>
-          <ion-title size="large">CareGiver Connect</ion-title>
+          <ion-title size="large">
+            <ion-text color="secondary">CareGiver Connect</ion-text>
+          </ion-title>
+        <ion-buttons :collapse="true" slot="end">
+          <ion-button color="primary" fill="solid" @click="() => router.push('/login')">Login</ion-button>
+          <ion-button color="primary" fill="solid" @click="() => router.push('/signup')">Signup</ion-button>
+        </ion-buttons>
         </ion-toolbar>
-      </ion-header>
+      </ion-header> -->
+      <ion-card>
+        <img src="../../banner.png"/>
+        <ion-card-content>
+          We are CareGiver Connect and we exist to connect dimentia patiens to providers and resources in their local resources.
+          Start with searching for providers or resources in your local area or let others know about resources in your area!
+        </ion-card-content>
+      </ion-card>
       <ion-button color="primary" size="large" expand="block" @click="() => router.push('/providers-search')">
         <ion-icon slot="start" :icon="searchCircle"></ion-icon>
         Find Providers
@@ -40,6 +56,9 @@
     IonTitle,
     IonToolbar,
     IonIcon,
+    IonCard,
+    IonCardContent,
+    IonText,
   } from '@ionic/vue';
   import { useRouter } from 'vue-router';
   import { searchCircle } from 'ionicons/icons';
